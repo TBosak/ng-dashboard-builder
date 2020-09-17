@@ -135,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "ng-dashboard-builder"
+  "defaultProject": "ng-dashboard-builder",
+  "cli": {
+    "analytics": "6a0f60be-499c-4685-94fa-94b9819a3f75"
+  }
 }
