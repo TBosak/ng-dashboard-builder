@@ -4,11 +4,11 @@
   <div class="draggable" draggable="true" (dragend)="layoutService.dropItem('example2')">Example 2</div>
 </div>
 <gridster [options]="options">
-  <gridster-item *ngFor="let item of layout"
+  <gridster-item class="mdc-card" *ngFor="let item of layout"
     [item]="item"
     (dragover)="layoutService.setDropId(item.id)"
-  >
+  ><mat-mini-fab color="primary" (click)="layoutService.deleteItem(item)">Delete</mat-mini-fab>
     <ng-container appLayoutItem [componentRef]="layoutService.getComponentRef(item.id)"></ng-container>
-    <button (click)="layoutService.deleteItem(item)">Delete Item</button>
+    
   </gridster-item>
 </gridster>

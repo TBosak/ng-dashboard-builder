@@ -7,6 +7,8 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { Example1Component } from './components/example1/example1.component';
 import { Example2Component } from './components/example2/example2.component';
 import { LayoutItemDirective } from './directives/layout-item.directive';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { LayoutItemDirective } from './directives/layout-item.directive';
   ],
   imports: [
     BrowserModule,
-    GridsterModule
+    GridsterModule,
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],
